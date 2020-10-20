@@ -1,0 +1,81 @@
+.header{ /*mengatur tampilam header*/
+
+    width: 100%;
+    height: 150px;
+    background-image: url(../img/asik.jpg);
+    color: white;
+    padding-left: 100px;
+    padding-top: 20px;
+    font-family: sans-serif;
+}
+
+
+.form { /*untuk mengatur susunan form*/
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 10px 10px;
+    /*pengaturan susunan grid*/
+    grid-template-areas: 
+      "baris1 baris1 baris1"
+      "baris2 baris2 baris2"
+      "tglLh tmpLh agama"
+      "univ fakJur jabatan"
+      "alamat alamat alamat";
+      padding-left: 100px;
+      padding-right: 100px;
+      padding-top: 20px;
+  }
+  
+.baris1 { /*mengatur susunan bentuk baris pertama*/
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 10px 10px;
+    grid-template-areas:
+      "namaLk namaPg";
+    grid-area: baris1;
+    height: 30px;
+  }
+  
+.namaLk { grid-area: namaLk; }
+  
+.namaPg { grid-area: namaPg; }
+  
+.baris2 { /*mengatur susunan bentuk baris kedua*/
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 10px 10px;
+    grid-template-areas:
+      "tlp email";
+    grid-area: baris2;
+    height: 30px;
+  }
+  
+.tlp { grid-area: tlp; }
+.email { grid-area: email; }
+.tglLh { grid-area: tglLh; }
+.tmpLh { grid-area: tmpLh; }
+.agama { grid-area: agama; }
+.univ { grid-area: univ; }
+.fakJur { grid-area: fakJur; }
+.jabatan { grid-area: jabatan; }
+.alamat { grid-area: alamat; }
+  
+.jarak_ketabel{
+  padding-top: 20px; /*jarak ke tabel*/
+}
+.jarak_upFoto{
+  padding-top: 10px; /*jarak ke label*/
+}
+
+.button{
+  margin-left: 100px; /*margin kiri*/
+  margin-top: 10px; /*margin atas*/
+  height: 40px; /*tinggi button/tombol*/
+  width: 60px; /*lebar button/tombol*/
+  color: white; /*warna teks pada tombol*/
+  background-color: green; /*warna tombol*/
+}
+

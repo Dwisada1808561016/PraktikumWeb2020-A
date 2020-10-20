@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/style.css"> <!--koneksi ke file style.css-->
+    <link rel="icon" href="img/icon.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Pendaftaran</title>
+</head>
+<body>
+    <div class="header"> <!--mengatur header-->
+        <h1>Halaman Pendaftaran</h1>
+        <h5>Pendaftaran sebagai peserta dalam RAKERWIL (Rapat Kerja Wilayah) Bali dan Nusa Tenggara 2020</h5>
+    </div>
+    <form action="" method="GET" class="form">
+        <div class="baris1"> <!--baris pertama-->
+            <input type="text" class="namaLk" placeholder="Nama Lengkap">
+            <input type="text" class="namaPg" placeholder="Nama Panggilan">
+        </div>
+
+        <div class="baris2"> <!--baris kedua-->
+            <input type="text" class="tlp" placeholder="No. Telepon">
+            <input type="text" class="email" placeholder="Email">
+        </div>
+        <input type="text" class="tglLh" placeholder="Tanggal Lahir">
+        <input type="text" class="tmpLh" placeholder="Tempat Lahir">
+        <!--membuat opsi agama-->
+        <select name="" class="agama" id="">
+            <option value="">Islam</option>
+            <option value="">Hindu</option>
+            <option value="">Katolik</option>
+            <option value="">Protestan</option>
+            <option value="">Bhuda</option>
+            <option value="">Konghucu</option>
+        </select>
+        <input type="text" class="univ" placeholder="Universitas">
+        <input type="text" class="fakJur" placeholder="Fakultas/Jurusan">
+        <input type="text" class="jabatan" placeholder="Jabatan">
+        <input type="text" class="alamat" placeholder="Alamat Asal">
+        
+        <div>
+            <label for="file">Foto Almamater</label><br>
+            <input type="file" name="" id="" class="jarak_upFoto">
+        </div>
+        <div>
+            <label for="file">Scan KTP</label><br>
+            <input type="file" name="" id="" class="jarak_upFoto">
+        </div>
+    </form>
+    <button type="submit" class="button">Daftar</button>
+</body>
+</html>
