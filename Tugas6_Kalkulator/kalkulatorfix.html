@@ -9,45 +9,45 @@
 <body>
     <h1>Tugas</h1> <br><br>
     <h2>Kalkulator</h2>
-    <form name="form">
-        <input class="bil" type="text" name="bil1" placeholder="bil 1">
-        <input type="button" class="button" onclick="tambah()" value="+" >
-        <input type="button" class="button" onclick="kurang()" value="-"><br>
+    <form name="form"> <!-- membuat form untuk tampilan -->
+        <input class="bil" type="text" name="bil1" placeholder="bil 1"> 
+        <input type="button" class="button" onclick="tambah()" value="+" > <!-- tombol tambah yang mengambi fungsi tambah() -->
+        <input type="button" class="button" onclick="kurang()" value="-"><br> <!-- tombol kurang yang mengambi fungsi kurang() -->
 
         <input class="bil" type="text" name="bil2" placeholder="bil 2">
-        <input type="button" class="button" onclick="kali()" value="x">
-        <input type="button" class="button" onclick="bagi()" value="/"><br>
+        <input type="button" class="button" onclick="kali()" value="x"> <!-- tombol kali yang mengambi fungsi kali() -->
+        <input type="button" class="button" onclick="bagi()" value="/"><br> <!-- tombol bagi yang mengambi fungsi bagi() -->
 
         <input class="hasil" type="text" name="hasil" value="" placeholder="hasil">
         <input type="reset" class="btnclr" onclick="kali()" value="clear">
     </form>
     <!-- javascript -->
     <script>
-        function cek(){
+        function cek(){ //fungsi cek untuk alert ketika belum ada masukan 
             if (form.bil1.value=="" || form.bil2.value=="") {
             alert("Angka Kosong");
             exit
             }
         }
-        function tambah(){
+        function tambah(){ //fungsi pertambahan
             cek();
             a=parseInt(form.bil1.value);
             b=parseInt(form.bil2.value);
             form.hasil.value=a+b;
         }
-        function kurang(){
+        function kurang(){ //fungsi pengurangan
             cek();
             a=parseInt(form.bil1.value);
             b=parseInt(form.bil2.value);
             form.hasil.value=a-b;
         }
-        function kali(){
+        function kali(){ //fungsi perkalian
             cek();
             a=parseInt(form.bil1.value);
             b=parseInt(form.bil2.value);
             form.hasil.value=a*b;
         }
-        function bagi(){
+        function bagi(){ //fungsi pembagian
             cek();
             a=parseInt(form.bil1.value);
             b=parseInt(form.bil2.value);
