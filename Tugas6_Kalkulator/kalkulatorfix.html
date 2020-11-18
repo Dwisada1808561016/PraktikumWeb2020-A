@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator</title>
+</head>
+<body>
+    <h1>Tugas</h1> <br><br>
+    <h2>Kalkulator</h2>
+    <form name="form">
+        <input class="bil" type="text" name="bil1" placeholder="bil 1">
+        <input type="button" class="button" onclick="tambah()" value="+" >
+        <input type="button" class="button" onclick="kurang()" value="-"><br>
+
+        <input class="bil" type="text" name="bil2" placeholder="bil 2">
+        <input type="button" class="button" onclick="kali()" value="x">
+        <input type="button" class="button" onclick="bagi()" value="/"><br>
+
+        <input class="hasil" type="text" name="hasil" value="" placeholder="hasil">
+        <input type="reset" class="btnclr" onclick="kali()" value="clear">
+    </form>
+    <!-- javascript -->
+    <script>
+        function cek(){
+            if (form.bil1.value=="" || form.bil2.value=="") {
+            alert("Angka Kosong");
+            exit
+            }
+        }
+        function tambah(){
+            cek();
+            a=parseInt(form.bil1.value);
+            b=parseInt(form.bil2.value);
+            form.hasil.value=a+b;
+        }
+        function kurang(){
+            cek();
+            a=parseInt(form.bil1.value);
+            b=parseInt(form.bil2.value);
+            form.hasil.value=a-b;
+        }
+        function kali(){
+            cek();
+            a=parseInt(form.bil1.value);
+            b=parseInt(form.bil2.value);
+            form.hasil.value=a*b;
+        }
+        function bagi(){
+            cek();
+            a=parseInt(form.bil1.value);
+            b=parseInt(form.bil2.value);
+            form.hasil.value=a/b;
+        }
+    </script>
+</body>
+</html>
